@@ -1,0 +1,71 @@
+/* Fonte personalizada */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container de estatísticas */
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+  max-width: 1200px;
+}
+
+/* Item de estatísticas */
+.stat-item {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 200px;
+}
+
+/* Efeito hover nos itens */
+.stat-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilização do número */
+.stat-number {
+  font-size: 3.5rem;
+  color: #6fc300;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Parágrafos */
+p {
+  font-size: 1rem;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+/* Ícones */
+.icon, .stat-item i {
+  font-size: 2.5rem;
+  color: #6fc300;
+  margin-bottom: 10px;
+}
+
+/* Tornando a seção responsiva */
+@media (max-width: 768px) {
+  .stats-container {
+      flex-direction: column;
+  }
+
+  .stat-item {
+      margin-bottom: 20px;
+  }
+}

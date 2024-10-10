@@ -1,0 +1,82 @@
+/* Animações Globais */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Fade In para o corpo */
+body {
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in forwards;
+}
+
+/* Animação de Slide para o Banner */
+.hero {
+    animation: slideInDown 1.2s ease-out forwards;
+}
+
+/* Fade In para a seção de conteúdo */
+.sobre-nos, .grid {
+    opacity: 0;
+    animation: fadeInUp 1.4s ease-in forwards;
+}
+
+/* Transições e Efeitos de Hover */
+.hero h1 {
+    transition: background-color 0.3s ease;
+}
+
+.hero h1:hover {
+    background-color: rgba(0, 128, 0, 0.8);
+}
+
+.sobre-nos h2 {
+    transition: color 0.3s ease;
+}
+
+.sobre-nos h2:hover {
+    color: #32CD32;
+}
+
+.grid-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item h3 {
+    transition: color 0.3s ease;
+}
+
+.grid-item h3:hover {
+    color: #32CD32;
+}

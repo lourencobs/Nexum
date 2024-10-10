@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in forwards;
+}
+
+.hero {
+    background-image: url('../logos e videos/imagem-fertilizantes.jpg'); /* Substitua com a imagem desejada */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 48px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sobre-nos {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.sobre-nos h2 {
+    color: #006400;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.sobre-nos p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.grid-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #006400;
+}
+
+.grid-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .grid {
+        flex-direction: column;
+    }
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.hero {
+    background-image: url('../logos e videos/imagem-fertilizantes.jpg'); /* Substitua com a imagem desejada */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideInDown 1.2s ease-out forwards;
+}
+
+@keyframes slideInDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.hero h1 {
+    color: white;
+    font-size: 48px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.hero h1:hover {
+    background-color: rgba(0, 128, 0, 0.8); /* Muda a cor ao passar o mouse */
+}
+
+.sobre-nos {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 40px auto;
+    max-width: 1200px;
+    opacity: 0;
+    animation: fadeInUp 1.2s ease-in forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.sobre-nos h2 {
+    color: #006400;
+    font-size: 36px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.sobre-nos h2:hover {
+    color: #32CD32; /* Muda de tom ao passar o mouse */
+}
+
+.sobre-nos p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    opacity: 0;
+    animation: fadeInUp 1.4s ease-in forwards;
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-10px); /* Sobe levemente ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #006400;
+    transition: color 0.3s ease;
+}
+
+.grid-item h3:hover {
+    color: #32CD32;
+}
+
+.grid-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .grid {
+        flex-direction: column;
+    }
+}

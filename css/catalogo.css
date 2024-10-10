@@ -1,0 +1,90 @@
+/* Fonte global e reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Estilo da seção de catálogo */
+.catalogo {
+  text-align: center;
+  padding: 60px;
+}
+
+.catalogo-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.item {
+  flex: 1 1 calc(33.333% - 20px);
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  max-width: 300px;
+}
+
+.item:hover {
+  transform: scale(1.1);
+}
+
+.item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.item h3 {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.item p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Botão do catálogo */
+.botao-catalogo {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.botao-catalogo:hover {
+  background-color: #218838;
+}
+
+/* Tornando a seção responsiva */
+@media (max-width: 768px) {
+  .catalogo-items {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .item {
+      max-width: 100%;
+  }
+}

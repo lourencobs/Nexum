@@ -1,0 +1,92 @@
+/* Estilos para a section de Política de Privacidade */
+.privacy-policy {
+    max-width: 800px;
+    margin: 80px auto 50px auto; /* Aumenta a margem superior */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.privacy-policy h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #27ae60;
+    padding-bottom: 10px;
+    animation: slideDown 0.8s ease-in-out;
+}
+
+.privacy-policy h2 {
+    font-size: 1.8rem;
+    color: #34495e;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+.privacy-policy h2::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background-color: #27ae60;
+    bottom: -5px;
+    left: 0;
+}
+
+.privacy-policy p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.privacy-policy a {
+    color: #27ae60;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+.privacy-policy a:hover {
+    border-bottom: 1px solid #27ae60;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

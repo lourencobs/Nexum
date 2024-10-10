@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexum</title>
+
+    <link rel="stylesheet" href="css/home.css">
+    
+    <link rel="stylesheet" href="css/animacoes.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet"> <!-- Google Fonts -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Para usar ícones FontAwesome -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+  <header class="header">
+    <div class="logo-container">
+      <img src="logos e videos/9917096e-fb49-4d32-92c1-9ed689d1fc81.jpg" alt="Logo" class="logo">
+  </div>
+  <button class="menu-toggle" aria-label="Toggle Menu">
+    &#9776; <!-- Ícone do menu hamburguer -->
+</button>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="filiais.html">Filiais</a></li>
+      </ul>
+    </nav>
+  </header>
+  <script src="js/header.js"></script>
+  
+   <main>
+  
+  <div class="video-conteiner">
+    <div class="video-wrapper">
+    <video autoplay muted loop>
+        <source src="logos e videos/857137-hd_1280_720_24fps.mp4" type="video/mp4"> Seu navegador não suporta a tag do vídeo
+    </video>
+    </div>
+
+  </div>
+  
+  <div class="stats-container">
+    <div class="stat-item">
+      <div class="icon"><i class="fas fa-building"></i></div> <!-- Ícone de prédio -->
+      <div class="stat-number" data-target="1">0</div>
+      <p>SEDES PRÓPRIAS<br>Em estados estratégicos</p>
+    </div>
+    <div class="stat-item">
+      <div class="icon"><i class="fas fa-box"></i></div> <!-- Ícone de caixa -->
+      <div class="stat-number" data-target="6">0</div>
+      <p>PRODUTOS<br>Qualidade internacional</p>
+    </div>
+    <div class="stat-item">
+      <div class="icon"><i class="fas fa-briefcase"></i></div> <!-- Ícone de maleta -->
+      <div class="stat-number" data-target="20">0</div>
+      <p>ANOS DE EXPERIÊNCIA<br>No mercado agro</p>
+    </div>
+    
+  </div>
+
+  <section class="empresa">
+    <div class="empresa-texto">
+      <h2>Sobre Nossa Empresa</h2>
+      <p>
+        Somos uma empresa focada em fornecer os melhores produtos e serviços para o setor agro. 
+        Com anos de experiência e uma equipe dedicada, garantimos a qualidade em cada etapa de nossa produção.
+      </p>
+      <a href="sobre.html" class="botao-sobre">Saiba Mais</a>
+    </div>
+    
+    <div class="empresa-video">
+      <video autoplay muted loop>
+        <source src="logos e videos/8745503-uhd_4096_2160_30fps.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+    </div>
+  </section>
+
+  <section class="catalogo">
+    <h2>Catálogo</h2>
+    <div class="catalogo-items">
+      
+      <!-- Produto 1 -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="logos e videos/d90f1b7b-736b-4468-92a8-b91afbb4210e.jpg" alt="Produto 1">
+            <h3>Map</h3>
+          </div>
+          <div class="card-back">
+            <h3>Map</h3>
+            <p>O fosfato monoamônico, também conhecido pela sigla MAP, é amplamente utilizado como fonte de fósforo e nitrogênio, dois dos três elementos mais requeridos pelas plantas.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Produto 2 -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="logos e videos/c49f5b4b-2e86-4d6b-9132-a36b8dbd67b8.jpg" alt="Produto 2">
+            <h3>Super Simples</h3>
+          </div>
+          <div class="card-back">
+            <h3>Super Simples</h3>
+            <p>O superfosfato simples, conhecido como SSP, é um fertilizante que fornece fósforo, cálcio e enxofre, três nutrientes essenciais para as plantas.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Produto 3 -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="logos e videos/142578ab-4f6e-46dd-a977-17da3e9cf8f1.jpg" alt="Produto 3">
+            <h3>Boro 10 Granulado</h3>
+          </div>
+          <div class="card-back">
+            <h3>Boro 10</h3>
+            <p>Boro 10 é um fertilizante foliar que proporciona maior pegamento da florada e transporte de açúcares, evitando a seca dos ponteiros.</p>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+    <a href="produtos.html" class="botao-catalogo">Ver Catálogo Completo</a>
+  </section>
+
+  <section class="cotacao-section">
+    <h2>Cotação do Dólar</h2>
+    <div id="cotacao-dolar" class="cotacao">Carregando...</div>
+    <p id="ultima-atualizacao" class="atualizacao">Última atualização: --</p>
+
+    <div class="select-view">
+        <button id="view-mensal" class="active">Mensal</button>
+        <button id="view-semanal">Semanal</button>
+    </div>
+
+    <canvas id="graficoCotacao"></canvas>
+
+    <div class="converter">
+        <input type="number" id="quantidade-dolar" placeholder="Quantidade em Dólares" />
+        <button id="converter-dolar">Converter para Reais</button>
+    </div>
+
+    <div class="converter" style="margin-top: 10px;">
+        <input type="number" id="quantidade-real" placeholder="Quantidade em Reais" />
+        <button id="converter-real">Converter para Dólares</button>
+    </div>
+
+    <div id="resultado" class="resultado">
+        <i class="fas fa-dollar-sign"></i>
+        <span id="resultado-texto">Resultado aparecerá aqui</span>
+    </div>
+</section>
+
+
+<script src="js/dolar.js"></script>
+
+
+
+  <!-- Ícone de Suporte WhatsApp -->
+  <a href="https://wa.me/47932691542" class="whatsapp-fixo" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    <img src="logos e videos/whatsapp_3670051.png" alt="Suporte via WhatsApp" >
+  </a>
+   </main>
+
+   <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="logos e videos/9917096e-fb49-4d32-92c1-9ed689d1fc81.jpg" alt="Nexum logo">
+        <p>
+          <a href="https://www.google.com/maps/place/rua+204,+35,+Meia+Praia,+Itapema" target="_blank" class="map-link">
+            Rua 204, 35, s. 702<br> Meia Praia, Itapema-SC-88220-000
+          </a>
+        </p>
+      </div>
+      
+      <div class="footer-links">
+        <h3>Institucional</h3>
+        <ul>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="politica.html">Política de Privacidade</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-contacts">
+        <h3>Contatos</h3>
+        <ul>
+          <li><img src="logos e videos/telephone-symbol-button.png" alt="Telefone" class="icon"> Telefone <br> 0154732691542</li>
+          <li><img src="logos e videos/whatsapp.png" alt="WhatsApp" class="icon"> WhatsApp <br> (47) 93269-1542</li>
+          <li><img src="logos e videos/apple.png" alt="E-mail" class="icon"> E-mail <br> comercial@nexumfertilizantes.com.br</li>
+        </ul>
+      </div>
+  
+      <div class="footer-social">
+        <h3>Mídias</h3>
+        <ul>
+          <li><img src="logos e videos/facebook.png" alt="Facebook" class="icon"> Facebook</li>
+          <li><img src="logos e videos/instagram.png" alt="Instagram" class="icon"> Instagram</li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>Copyright © 2024 Nexum Fertilizantes - Feito com ♥ Lourenço</p>
+    </div>
+  </footer>
+  
+  
+
+
+<script src="js/stats.js"></script>
+</body>
+</html>

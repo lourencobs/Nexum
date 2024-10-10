@@ -1,0 +1,105 @@
+/* Reset global e otimização */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fonte e background do corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    font-size: 1rem; /* Usando rem para escalabilidade */
+}
+
+/* Seção de cotação */
+.cotacao-section {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cotacao-section h2 {
+    font-size: 2rem; /* Usando rem */
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.cotacao {
+    font-size: 3rem; /* Usando rem */
+    font-weight: bold;
+    color: #28a745;
+}
+
+.atualizacao {
+    font-size: 1rem; /* Usando rem */
+    color: #6c757d;
+    margin-top: 10px;
+}
+
+#graficoCotacao {
+    margin-top: 30px;
+    max-width: 100%;
+}
+
+/* Conversor de cotação */
+.converter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.converter input {
+    width: 48%;
+    padding: 0.625rem; /* Usando rem */
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    font-size: 1.125rem; /* Usando rem */
+}
+
+.converter button {
+    width: 48%;
+    padding: 0.75rem; /* Usando rem */
+    background-color: #007bff;
+    color: white;
+    font-size: 1.125rem; /* Usando rem */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.converter button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos de foco nos botões */
+button:focus, .converter button:focus {
+    outline: 3px solid #0056b3;
+    outline-offset: 3px;
+}
+
+/* Exibição do resultado */
+.resultado {
+    font-size: 1.5rem; /* Usando rem */
+    margin-top: 20px;
+    color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #e9f7ef;
+    border: 2px solid #28a745;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.resultado i {
+    position: absolute;
+    left: 10px
+}

@@ -1,0 +1,113 @@
+/* Estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Seção do vídeo principal */
+.video-conteiner {
+  width: 100vw;
+  height: 100vh;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Seção sobre a empresa */
+.empresa {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #f9f9f9;
+  flex-wrap: wrap; /* Torna flexível em telas menores */
+}
+
+.empresa-texto {
+  flex: 1;
+  padding-right: 20px;
+  max-width: 600px;
+}
+
+.empresa-texto h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.empresa-texto p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.botao-sobre {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #28a745;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.botao-sobre:hover {
+  background-color: #218838;
+}
+
+/* Vídeo dentro da seção empresa */
+.empresa-video {
+  flex: 1;
+  max-width: 45%;
+}
+
+.empresa-video video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .empresa {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .empresa-texto {
+      max-width: 100%;
+      padding-right: 0;
+  }
+
+  .empresa-video {
+      max-width: 100%;
+      margin-top: 20px;
+  }
+}

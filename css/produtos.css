@@ -1,0 +1,96 @@
+/* Espaçamento maior entre o catálogo e o header */
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  padding-top: 60px; /* Aumentando o espaçamento entre o primeiro produto e o header */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.catalogdown {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.img-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.description {
+  padding: 15px;
+}
+
+.description h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.description p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+/* Estilo do botão no final */
+.catalog-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 50px; /* Espaçamento maior entre o botão e o footer */
+}
+
+.cta-whatsapp {
+  background-color: #25d366;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Melhorando o hover do botão */
+.cta-whatsapp:hover {
+  background-color: #22c35e;
+  transform: scale(1.05); /* Aumenta o tamanho levemente no hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Adiciona uma sombra maior no hover */
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .catalog, .catalogdown {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .catalog, .catalogdown {
+      grid-template-columns: 1fr;
+  }
+}
