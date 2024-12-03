@@ -94,3 +94,11 @@
       grid-template-columns: 1fr;
   }
 }
+
+.catalog {
+  margin-top: 20px; /* Ajuste este valor conforme necessário */
+}
+
+body {
+  padding-top: 60px; /* Ajuste o valor conforme a altura do header */
+}
