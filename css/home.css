@@ -46,16 +46,7 @@ body {
   position: relative;
 }
 
-.logo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 5px solid #fff;
-  position: absolute;
-  bottom: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-}
+
 
 /* Video Section */
 .video-container {
@@ -123,8 +114,6 @@ footer {
 
 .footer-logo img {
   width: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
 }
 
 .footer-bottom {
@@ -407,24 +396,9 @@ footer {
   text-decoration: none;
 }
 
-/* Logo ajustada para ficar metade no header e metade no vídeo */
-.logo-container {
-  position: relative;
-  z-index: 101; /* Logo acima do vídeo */
-}
 
-.logo {
-  width: 135px;
-  height: 135px;
-  border-radius: 50%;
-  border: 5px solid #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Mantém a logo centralizada */
-  top: 35px;
-  left: 100px;
-}
+
+
 
 /* Footer com hover */
 footer {
@@ -648,7 +622,7 @@ footer {
 }
 
 .footer-logo img {
-  width: 100px; /* Largura do logo */
+  width: 200px; /* Largura do logo */
 }
 
 .footer-links, .footer-contacts, .footer-social {
@@ -802,4 +776,38 @@ footer {
 
 .menu-toggle {
   margin-left: auto; /* Empurra o botão hamburguer para a direita */
+}
+
+
+
+/* Estilo para o header fixo */
+.header {
+  position: fixed; /* Torna o header fixo */
+  top: 0;
+  left: 0;
+  width: 100%; /* Faz o header ocupar toda a largura */
+  height: 80px; /* Altura do header */
+  display: flex;
+  justify-content: center; /* Centraliza a logo horizontalmente */
+  align-items: center; /* Centraliza a logo verticalmente */
+  background-color: #004d40; /* Cor de fundo do header */
+  z-index: 1000; /* Garante que o header fique acima dos outros elementos */
+}
+
+/* Garantir o tamanho da logo */
+.logo {
+  width: 300px; /* Ajuste o tamanho da logo, se necessário */
+  height: auto; /* Mantém a proporção */
+  margin-bottom: 10px;
+  margin-right: 600px;
+}
+body {
+  margin-top: 80px; /* Mesmo valor da altura do header */
+}
+
+.footer-logo {
+  margin-bottom: 0; /* Reduz o espaço inferior */
+  padding-top: 10px; /* Adicione espaçamento superior, se necessário */
+  position: relative;
+  top: -30px; /* Mova para cima */
 }
