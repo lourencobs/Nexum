@@ -688,9 +688,7 @@ footer {
 /* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
   /* Esconde a logo no mobile */
-  .logo-container {
-    display: none;
-  }
+  
 }
 
 /* Estilos gerais para a logo e navegação */
@@ -734,16 +732,13 @@ footer {
 /* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
   /* Esconde a logo no mobile */
-  .logo-container {
-      display: none; /* Não exibe a logo no mobile */
-  }
-
+ 
   /* Oculta o menu por padrão */
   .nav {
       display: none; /* O menu começa oculto */
       flex-direction: column; /* Alinhamento vertical */
       position: absolute; /* Posiciona sobre o conteúdo */
-      top: 50px; /* Distância do topo */
+      top: 80px; /* Distância do topo */
       left: 0;
       right: 0;
       background-color: #2f4f4f; /* Cor do fundo do menu igual ao header */
@@ -810,4 +805,46 @@ body {
   padding-top: 10px; /* Adicione espaçamento superior, se necessário */
   position: relative;
   top: -30px; /* Mova para cima */
+}
+
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between; /* Logo à esquerda e botão à direita */
+    align-items: center; /* Centraliza verticalmente os itens */
+    padding: 10px 15px; /* Espaçamento interno para manter um visual limpo */
+  }
+
+  .logo-container {
+    position: absolute; /* Garante a posição fixa no canto superior esquerdo */
+    left: 2px; /* Ajusta a distância do lado esquerdo */
+  }
+
+  .logo {
+    max-width: 250px; /* Define um tamanho adequado para a logo */
+    height: auto;
+    margin: 0;
+  }
+
+  .menu-toggle {
+    position: absolute;
+    right: 10px; /* Posiciona no canto direito */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajuste preciso para centralizar */
+    margin-top: 5px;
+  }
+
+  /* Ajuste do menu que aparece ao clicar no botão hambúrguer */
+  .menu {
+    position: absolute;
+    top: 70px; /* Move a aba do menu para baixo */
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Cor de fundo do menu */
+    display: none; /* Inicialmente escondido */
+  }
+
+  .menu.open {
+    display: block; /* Exibe o menu quando estiver aberto */
+  }
 }
